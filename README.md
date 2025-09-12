@@ -73,10 +73,10 @@
 
        <div style="height:50px"></div>
       <h2 style="text-align:center">Water Sort Puzzle Quest</h2>
-      <div class="game-holder" onclick="window.open('games/Water Sort Puzzle Quest/index.html','_blank')">
+      <div class="game-holder" onclick="window.open('games/WaterSortPuzzleQuest/index.html','_blank')">
         <img src="games/Water Sort Puzzle Quest.png" alt="Water Sort Puzzle Quest thumbnail">
         <div class="overlay">
-          <a class="play-button" href="games/Water Sort Puzzle Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
+          <a class="play-button" href="games/WaterSortPuzzleQuest/index.html" target="_blank" rel="noopener">▶ Play</a>
         </div>
       </div>
 
