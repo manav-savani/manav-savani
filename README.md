@@ -29,83 +29,82 @@
       </h2>
     </header>
 
-    <main>
+  <main>
 
-    
-      <div class="game-holder" onclick="window.open('games/Bird Sort Mania Color Puzzle/index.html','_blank')">
-        <img src="games/Bird Sort Mania Color Puzzle.png" alt="Bird Sort Mania Color Puzzle thumbnail">
-        <div class="overlay">
-        <a class="play-button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
-      
-      <div style="height:50px"></div>
-      <h3>
-        <a href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest" target="_blank" rel="noopener">
-          Word Connect Quest
-        </a>
-      </h3>
-      <div class="game-holder" onclick="window.open('games/Word Connect Quest/index.html','_blank')">
-        <img src="games/Word Connect Quest.jpg" alt="Word Connect Quest thumbnail">
-        <div class="overlay">
-          <a class="play-button" href="games/Word Connect Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
+  <div class="game-holder" onclick="window.open('games/Bird Sort Mania Color Puzzle/index.html','_blank')">
+    <img src="games/Bird Sort Mania Color Puzzle.png" alt="Bird Sort Mania Color Puzzle thumbnail">
+    <div class="overlay">
+    <a class="play-button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
+  
+  <div style="height:50px"></div>
+  <h3>
+    <a href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest" target="_blank" rel="noopener">
+      Word Connect Quest
+    </a>
+  </h3>
+  <div class="game-holder" onclick="window.open('games/Word Connect Quest/index.html','_blank')">
+    <img src="games/Word Connect Quest.jpg" alt="Word Connect Quest thumbnail">
+    <div class="overlay">
+      <a class="play-button" href="games/Word Connect Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
 
-       <div style="height:50px"></div>
-      <h4>
-        <a href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga" target="_blank" rel="noopener">
-          Traffic Slide Saga
-        </a>
-      </h4>
-      <div class="game-holder" onclick="window.open('games/Traffic Slide Saga/index.html','_blank')">
-        <img src="games/Traffic Slide Saga.png" alt="Traffic Slide Saga thumbnail">
-        <div class="overlay">
-          <a class="play-button" href="games/Traffic Slide Saga/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
+   <div style="height:50px"></div>
+  <h4>
+    <a href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga" target="_blank" rel="noopener">
+      Traffic Slide Saga
+    </a>
+  </h4>
+  <div class="game-holder" onclick="window.open('games/Traffic Slide Saga/index.html','_blank')">
+    <img src="games/Traffic Slide Saga.png" alt="Traffic Slide Saga thumbnail">
+    <div class="overlay">
+      <a class="play-button" href="games/Traffic Slide Saga/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
 
-       <div style="height:50px"></div>
-       <h5>
-        <a href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit" target="_blank" rel="noopener">
-          Puzzle Candy Match Block
-        </a>
-      </h5>
-      <div class="game-holder" onclick="window.open('games/Puzzle Candy Match Block/index.html','_blank')">
-        <img src="games/Puzzle Candy Match Block.jpg" alt="Puzzle Candy Match Block thumbnail">
-        <div class="overlay">
-          <a class="play-button" href="games/Puzzle Candy Match Block/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
-      
-       <div style="height:50px"></div>
-       <h6>
-        <a href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue" target="_blank" rel="noopener">
-          Royal Rescue
-        </a>
-      </h6>
-      <div class="game-holder" onclick="window.open('games/Royal Rescue/index.html','_blank')">
-        <img src="games/Royal Rescue.jpg" alt="Royal Rescue thumbnail">
-        <div class="overlay">
-          <a class="play-button" href="games/Royal Rescue/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
+   <div style="height:50px"></div>
+   <h5>
+    <a href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit" target="_blank" rel="noopener">
+      Puzzle Candy Match Block
+    </a>
+  </h5>
+  <div class="game-holder" onclick="window.open('games/Puzzle Candy Match Block/index.html','_blank')">
+    <img src="games/Puzzle Candy Match Block.jpg" alt="Puzzle Candy Match Block thumbnail">
+    <div class="overlay">
+      <a class="play-button" href="games/Puzzle Candy Match Block/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
+  
+   <div style="height:50px"></div>
+   <h6>
+    <a href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue" target="_blank" rel="noopener">
+      Royal Rescue
+    </a>
+  </h6>
+  <div class="game-holder" onclick="window.open('games/Royal Rescue/index.html','_blank')">
+    <img src="games/Royal Rescue.jpg" alt="Royal Rescue thumbnail">
+    <div class="overlay">
+      <a class="play-button" href="games/Royal Rescue/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
 
-       <div style="height:50px"></div> 
-       <h7>
-        <a href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest" target="_blank" rel="noopener">
-          Water Sort Puzzle Quest
-        </a>
-      </h7>
-      <div class="game-holder" onclick="window.open('games/WaterSortPuzzleQuest/index.html','_blank')">
-        <img src="games/Water Sort Puzzle Quest.png" alt="Water Sort Puzzle Quest thumbnail">
-        <div class="overlay">
-          <a class="play-button" href="games/WaterSortPuzzleQuest/index.html" target="_blank" rel="noopener">▶ Play</a>
-        </div>
-      </div>
+   <div style="height:50px"></div> 
+   <h7>
+    <a href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest" target="_blank" rel="noopener">
+      Water Sort Puzzle Quest
+    </a>
+  </h7>
+  <div class="game-holder" onclick="window.open('games/WaterSortPuzzleQuest/index.html','_blank')">
+    <img src="games/Water Sort Puzzle Quest.png" alt="Water Sort Puzzle Quest thumbnail">
+    <div class="overlay">
+      <a class="play-button" href="games/WaterSortPuzzleQuest/index.html" target="_blank" rel="noopener">▶ Play</a>
+    </div>
+  </div>
 
 
-    </main>
+</main>
 
     <footer>
       <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap">
