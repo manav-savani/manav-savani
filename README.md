@@ -3,19 +3,23 @@
   <title>Manav Savani - Unity Games Portfolio</title>
   <style>
     :root{--accent:#0ea5a4;--bg:#0f1724;--card:#111827;--muted:#9ca3af}
-    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071028 0%, #0b1220 100%);color:#e6eef6}
-    .container{max-width:1100px;margin:36px auto;padding:24px}
-    header{text-align:center;margin-bottom:20px}
-    h1{margin:0;font-size:26px}
-    h2{margin:10px 0 0;font-size:20px;color:var(--accent)}
-
-    .game-holder{position:relative;width:100%;max-width:720px;margin:20px auto;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    .game-holder img{width:100%;display:block}
-    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease}
-    .game-holder:hover .overlay{opacity:1;cursor:pointer}
-    .play-button{background:var(--accent);color:#042225;padding:14px 26px;border-radius:50px;font-weight:700;font-size:18px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.4)}
-
-    footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:white}
+    .container{max-width:900px;margin:0 auto;padding:20px}
+    header{text-align:center;margin-bottom:40px}
+    header h1{margin:0;font-size:28px;color:var(--accent)}
+    header p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.4);transition:transform .2s}
+    .card:hover{transform:translateY(-4px)}
+    .thumb{width:100%;height:180px;object-fit:cover;display:block}
+    h2, h3, h4, h5, h6, h7 {
+      margin: 10px 0;
+      font-size: 22px;
+      text-align: center;
+      color: var(--accent);
+    }
+    .btn{display:block;text-align:center;padding:10px;background:var(--accent);color:white;font-weight:bold;text-decoration:none;border-radius:0 0 12px 12px}
+    .btn:hover{background:#08918f}
   </style>
 </head>
 <body>
