@@ -40,11 +40,11 @@
       </div>
       
       <div style="height:50px"></div>
-      <h2>
+      <h3>
         <a href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest" target="_blank" rel="noopener">
           Word Connect Quest
         </a>
-      </h2>
+      </h3>
       <div class="game-holder" onclick="window.open('games/Word Connect Quest/index.html','_blank')">
         <img src="games/Word Connect Quest.jpg" alt="Word Connect Quest thumbnail">
         <div class="overlay">
@@ -53,11 +53,11 @@
       </div>
 
        <div style="height:50px"></div>
-      <h2>
+      <h4>
         <a href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga" target="_blank" rel="noopener">
           Traffic Slide Saga
         </a>
-      </h2>
+      </h4>
       <div class="game-holder" onclick="window.open('games/Traffic Slide Saga/index.html','_blank')">
         <img src="games/Traffic Slide Saga.png" alt="Traffic Slide Saga thumbnail">
         <div class="overlay">
@@ -66,11 +66,11 @@
       </div>
 
        <div style="height:50px"></div>
-       <h2>
+       <h5>
         <a href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit" target="_blank" rel="noopener">
           Puzzle Candy Match Block
         </a>
-      </h2>
+      </h5>
       <div class="game-holder" onclick="window.open('games/Puzzle Candy Match Block/index.html','_blank')">
         <img src="games/Puzzle Candy Match Block.jpg" alt="Puzzle Candy Match Block thumbnail">
         <div class="overlay">
@@ -79,11 +79,11 @@
       </div>
       
        <div style="height:50px"></div>
-       <h2>
+       <h6>
         <a href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue" target="_blank" rel="noopener">
           Royal Rescue
         </a>
-      </h2>
+      </h6>
       <div class="game-holder" onclick="window.open('games/Royal Rescue/index.html','_blank')">
         <img src="games/Royal Rescue.jpg" alt="Royal Rescue thumbnail">
         <div class="overlay">
@@ -91,11 +91,12 @@
         </div>
       </div>
 
-       <div style="height:50px"></div> <h2>
+       <div style="height:50px"></div> 
+       <h7>
         <a href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest" target="_blank" rel="noopener">
           Water Sort Puzzle Quest
         </a>
-      </h2>
+      </h7>
       <div class="game-holder" onclick="window.open('games/WaterSortPuzzleQuest/index.html','_blank')">
         <img src="games/Water Sort Puzzle Quest.png" alt="Water Sort Puzzle Quest thumbnail">
         <div class="overlay">
