@@ -41,6 +41,15 @@
           <a class="play-button" href="games/Word Connect Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
         </div>
       </div>
+
+       <div style="height:50px"></div>
+      <h2 style="text-align:center">Word Connect Quest</h2>
+      <div class="game-holder" onclick="window.open('games/Traffic Slide Saga/index.html','_blank')">
+        <img src="games/Traffic Slide Saga.png" alt="Traffic Slide Saga thumbnail">
+        <div class="overlay">
+          <a class="play-button" href="games/Traffic Slide Saga/index.html" target="_blank" rel="noopener">▶ Play</a>
+        </div>
+      </div>
     </main>
 
     <footer>
