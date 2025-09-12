@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "804188104964",
+    "firebase_url": "https://water-sort-puzzle-quest-default-rtdb.firebaseio.com",
+    "project_id": "water-sort-puzzle-quest",
+    "storage_bucket": "water-sort-puzzle-quest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804188104964:android:e7cd6c7fa825ecc4aec851",
+        "android_client_info": {
+          "package_name": "com.Game.WaterSortPuzzleQuest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWmGFEn4a2McF1FSnKzlOCNYAgH_mIQ-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

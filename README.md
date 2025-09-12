@@ -26,6 +26,8 @@
     </header>
 
     <main>
+
+    
       <div class="game-holder" onclick="window.open('games/Bird Sort Mania Color Puzzle/index.html','_blank')">
         <img src="games/Bird Sort Mania Color Puzzle.png" alt="Bird Sort Mania Color Puzzle thumbnail">
         <div class="overlay">
@@ -50,6 +52,35 @@
           <a class="play-button" href="games/Traffic Slide Saga/index.html" target="_blank" rel="noopener">▶ Play</a>
         </div>
       </div>
+
+       <div style="height:50px"></div>
+      <h2 style="text-align:center">Puzzle Candy Match Block</h2>
+      <div class="game-holder" onclick="window.open('games/Puzzle Candy Match Block/index.html','_blank')">
+        <img src="games/Puzzle Candy Match Block.jpg" alt="Puzzle Candy Match Block thumbnail">
+        <div class="overlay">
+          <a class="play-button" href="games/Puzzle Candy Match Block/index.html" target="_blank" rel="noopener">▶ Play</a>
+        </div>
+      </div>
+      
+       <div style="height:50px"></div>
+      <h2 style="text-align:center">Royal Rescue</h2>
+      <div class="game-holder" onclick="window.open('games/Royal Rescue/index.html','_blank')">
+        <img src="games/Royal Rescue.jpg" alt="Royal Rescue thumbnail">
+        <div class="overlay">
+          <a class="play-button" href="games/Royal Rescue/index.html" target="_blank" rel="noopener">▶ Play</a>
+        </div>
+      </div>
+
+       <div style="height:50px"></div>
+      <h2 style="text-align:center">Water Sort Puzzle Quest</h2>
+      <div class="game-holder" onclick="window.open('games/Water Sort Puzzle Quest/index.html','_blank')">
+        <img src="games/Water Sort Puzzle Quest.png" alt="Water Sort Puzzle Quest thumbnail">
+        <div class="overlay">
+          <a class="play-button" href="games/Water Sort Puzzle Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
+        </div>
+      </div>
+
+
     </main>
 
     <footer>
