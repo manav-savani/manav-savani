@@ -32,6 +32,15 @@
           <a class="play-button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">▶ Play</a>
         </div>
       </div>
+      
+      <div style="height:50px"></div>
+      <h2 style="text-align:center">Word Connect Quest</h2>
+      <div class="game-holder" onclick="window.open('games/Word Connect Quest/index.html','_blank')">
+        <img src="games/Word Connect Quest.jpg" alt="Word Connect Quest thumbnail">
+        <div class="overlay">
+          <a class="play-button" href="games/Word Connect Quest/index.html" target="_blank" rel="noopener">▶ Play</a>
+        </div>
+      </div>
     </main>
 
     <footer>
