@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Manav Savani — Unity Games Portfolio</title>
+  <title>Manav Savani - Unity Games Portfolio</title>
   <style>
     :root{--accent:#0ea5a4;--bg:#0f1724;--card:#111827;--muted:#9ca3af}
     html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071028 0%, #0b1220 100%);color:#e6eef6}
