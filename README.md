@@ -35,8 +35,9 @@
       <div class="game-holder" onclick="window.open('games/Bird Sort Mania Color Puzzle/index.html','_blank')">
         <img src="games/Bird Sort Mania Color Puzzle.png" alt="Bird Sort Mania Color Puzzle thumbnail">
         <div class="overlay">
-           <a class="button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">▶ Play</a>
-          <a class="button" href="https://play.google.com/store/apps/details?id=com.game.bird.sort.mania.color.puzzle" target="_blank" rel="noopener">⬇ Download</a>
+        <a class="play-button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">▶ Play</a>
+      <div style="height:5px"></div>
+        <a class="download-button" href="games/Bird Sort Mania Color Puzzle/index.html" target="_blank" rel="noopener">Download</a>
         </div>
       </div>
       
