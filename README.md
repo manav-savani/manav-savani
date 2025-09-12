@@ -43,7 +43,7 @@
       </div>
 
        <div style="height:50px"></div>
-      <h2 style="text-align:center">Word Connect Quest</h2>
+      <h2 style="text-align:center">Traffic Slide Saga</h2>
       <div class="game-holder" onclick="window.open('games/Traffic Slide Saga/index.html','_blank')">
         <img src="games/Traffic Slide Saga.png" alt="Traffic Slide Saga thumbnail">
         <div class="overlay">
