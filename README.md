@@ -15,11 +15,11 @@
     h7{margin:10px 0 0;font-size:20px;color:var(--accent)}
 .playstore-badge{
       position:absolute;
-      top:10px;
-      right:10px;
+      top:100px;
+      right:100px;
     }
     .playstore-badge img{
-      height:40px; /* adjust size */
+      height:80px; /* adjust size */
       transition:0.2s;
     }
     .playstore-badge img:hover{
