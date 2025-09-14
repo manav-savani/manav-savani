@@ -13,30 +13,17 @@
     h5{margin:10px 0 0;font-size:20px;color:var(--accent)}
     h6{margin:10px 0 0;font-size:20px;color:var(--accent)}
     h7{margin:10px 0 0;font-size:20px;color:var(--accent)}
-.playstore-btn{
+.playstore-badge{
       position:absolute;
       top:10px;
       right:10px;
-      display:flex;
-      align-items:center;
-      gap:6px;
-      background:var(--accent);
-      color:#042225;
-      padding:8px 14px;
-      border-radius:50px;
-      font-weight:600;
-      font-size:14px;
-      text-decoration:none;
-      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    }
+    .playstore-badge img{
+      height:40px; /* adjust size */
       transition:0.2s;
     }
-    .playstore-btn:hover{
-      background:#0cc9c5;
+    .playstore-badge img:hover{
       transform:scale(1.05);
-    }
-    .playstore-btn svg{
-      width:18px;
-      height:18px;
     }
     .game-holder{position:relative;width:100%;max-width:720px;margin:20px auto;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
     .game-holder img{width:100%;display:block}
@@ -50,12 +37,9 @@
 <body>
   <div class="container">
     <header>
-      <a class="playstore-btn" href="https://play.google.com/store/apps/dev?id=6226892586271588891" target="_blank" rel="noopener">
-        <!-- Play Store Icon (SVG) -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
-          <path d="M325.3 234.3 104.6 30.7 352 176l-26.7 58.3zm-214.2-197L303.8 224 72.5 400c-2.1-7.6-3.5-15.8-3.5-24.5V136c0-36.2 15-72 42.1-98.7zM352 336 104.6 481.3l220.7-203.6L352 336zm44.5-92.4L384 256l12.5 12.4-264 243.5C154.1 515.2 175.5 520 198 520h116c59.6 0 108-48.4 108-108V198c0-22.5-4.8-43.9-13.1-62.5L396.5 243.6z"/>
-        </svg>
-        Play Store
+     <a class="playstore-badge" href="https://play.google.com/store/apps/dev?id=6226892586271588891" target="_blank" rel="noopener">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+             alt="Get it on Google Play">
       </a>
       <h1>MANAV SAVANI — Unity Developer</h1>
       <h2>
