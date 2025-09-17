@@ -1057,8 +1057,8 @@
 
                         <div class="game-card">
                             <div class="game-image">
-                                <img src="Portfolio/manav-savani/games/Word Connect Quest.jpg"
-                                    alt="Word Connect Quest">
+                                <img src="games/Word Connect Quest.jpg
+                                    alt="Word Connect Quest thumbnail">
                                 <a class="play-button"
                                     href="https://manav-savani.github.io/manav-savani/games/Word%20Connect%20Quest/index.html"
                                     target="_blank">
