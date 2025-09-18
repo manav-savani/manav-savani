@@ -38,7 +38,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated Background */
         .bg-animation {
             position: fixed;
             top: 0;
@@ -93,7 +92,6 @@
             }
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -157,7 +155,6 @@
             width: 100%;
         }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -177,9 +174,9 @@
 
         .hero-title {
             font-family: 'Orbitron', monospace;
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(2.5rem, 6vw, 4rem); 
             font-weight: 900;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
             background-size: 200% 200%;
             -webkit-background-clip: text;
@@ -187,23 +184,26 @@
             -webkit-text-fill-color: transparent;
             animation: gradientShift 3s ease infinite;
             text-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+            line-height: 1.1; 
         }
 
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.1rem; 
             color: var(--text-dim);
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             font-weight: 300;
-            letter-spacing: 2px;
+            letter-spacing: 1px; 
         }
 
-        .hero-description {
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
+
+      .hero-description {
+            font-size: 1rem;
+            margin-bottom: 2rem; 
             color: var(--text-light);
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.5;
         }
 
         .cta-button {
@@ -243,7 +243,7 @@
 
         /* Section Styles */
         .section {
-            padding: 100px 0;
+            padding: 40px 0;
             position: relative;
         }
 
@@ -344,7 +344,6 @@
             box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
         }
 
-        /* Experience Timeline */
         .experience-item {
             position: relative;
             padding-left: 3rem;
@@ -408,7 +407,6 @@
             left: -1rem;
         }
 
-        /* Games Showcase Section */
         .games-grid {
             display: flex;
             flex-direction: column;
@@ -490,13 +488,11 @@
             display: block;
         }
 
-        /* Hover image blur + dim */
         .game-image:hover img {
             opacity: 0.3;
             filter: blur(2px);
         }
 
-        /* Play button */
         .play-button {
             position: absolute;
             top: 50%;
@@ -518,24 +514,19 @@
             z-index: 2;
         }
 
-        /* Icon style */
         .play-button i {
             font-size: 18px;
         }
 
-        /* Hover to reveal button */
         .game-image:hover .play-button {
             opacity: 1;
             transform: translate(-50%, -50%) scale(1.05);
         }
 
-        /* Optional: Add hover glow */
         .play-button:hover {
             box-shadow: 0 0 15px #ff6b6b;
             transform: translate(-50%, -50%) scale(1.1);
         }
-
-
 
         .game-card:hover .game-image img {
             transform: scale(1.05);
@@ -594,7 +585,6 @@
             font-size: 0.9rem;
         }
 
-        /* Contact Section */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -623,7 +613,6 @@
             display: block;
         }
 
-        /* Footer */
         .footer {
             background: var(--darker-bg);
             padding: 3rem 0;
@@ -631,7 +620,6 @@
             border-top: 1px solid rgba(0, 255, 136, 0.1);
         }
 
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -649,15 +637,13 @@
             opacity: 0;
         }
 
-        /* Responsive Design */
-
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
 
             .hero-title {
-                font-size: 3rem;
+                font-size: 2rem;
             }
 
             .section {
@@ -708,7 +694,6 @@
 
         }
 
-        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -731,7 +716,6 @@
 <body>
     <div class="bg-animation"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <div class="logo">Manav Savani</div>
@@ -746,7 +730,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Manav Savani</h1>
@@ -759,7 +742,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title fade-in-up">PROFESSIONAL SUMMARY</h2>
@@ -816,7 +798,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title fade-in-up">SKILLS & EXPERTISE</h2>
@@ -869,7 +850,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title fade-in-up">WORK EXPERIENCE</h2>
@@ -917,7 +897,6 @@
         </div>
     </section>
 
-    <!-- Games Showcase Section -->
     <section id="games" class="section">
         <div class="container">
             <h2 class="section-title fade-in-up">GAME PORTFOLIO</h2>
@@ -1096,7 +1075,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title fade-in-up">GET IN TOUCH</h2>
@@ -1147,7 +1125,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Manav Savani. All rights reserved.</p>
@@ -1156,7 +1133,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1170,7 +1146,6 @@
             });
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1185,12 +1160,10 @@
             });
         }, observerOptions);
 
-        // Observe all elements with fade-in-up class
         document.querySelectorAll('.fade-in-up').forEach(el => {
             observer.observe(el);
         });
 
-        // Navigation background opacity on scroll
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
@@ -1200,7 +1173,6 @@
             }
         });
 
-        // Parallax effect for hero section
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const parallax = document.querySelector('.hero-content');
@@ -1210,7 +1182,6 @@
             }
         });
 
-        // Add hover effects to skill tags
         document.querySelectorAll('.skill-tag').forEach(tag => {
             tag.addEventListener('mouseenter', function () {
                 this.style.background = `rgba(${Math.random() * 255}, ${Math.random() * 255}, 136, 0.2)`;
@@ -1221,10 +1192,10 @@
             });
         });
 
-        // Typing effect for hero title (optional enhancement)
+        
         const heroTitle = document.querySelector('.hero-title');
         if (heroTitle) {
-            const text = heroTitle.textContent;
+            const text = "Manav Savani"; 
             heroTitle.textContent = '';
             let i = 0;
             const typeWriter = () => {
@@ -1234,7 +1205,7 @@
                     setTimeout(typeWriter, 100);
                 }
             };
-            setTimeout(typeWriter, 1000);
+            setTimeout(typeWriter, 500);
         }
     </script>
 </body>
