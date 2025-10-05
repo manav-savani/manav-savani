@@ -1,652 +1,1016 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manav Savani - Unity Game Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
 
-    <meta name="keywords"
-        content="Unity Developer, Game Developer, C#, Mobile Games, Casual Games,Puzzle Games, Unity 2D, Unity 3D">
+    <meta
+      name="keywords"
+      content="Unity Developer, Game Developer, C#, Mobile Games, Casual Games,Puzzle Games, Unity 2D, Unity 3D"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="bg-animation"></div>
 
     <nav>
-        <div class="nav-container">
-            <div class="logo">Manav Savani</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="logo">Manav Savani</div>
+        <div class="menu-icon" id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Manav Savani</h1>
-            <p class="hero-subtitle"><strong>UNITY DEVELOPER</strong></p>
-            <p class="hero-description">
-                Senior Unity Game Developer | Cross-Platform Game Logic &
-                Optimization Specialist | Delivering High-Performance Mobile Experiences
-            </p>
-            <a href="#games" class="cta-button">View My Work</a>
+      <div class="hero-content">
+        <h1 class="hero-title">Manav Savani</h1>
+        <p class="hero-subtitle"><strong>UNITY DEVELOPER</strong></p>
+        <p class="hero-description">
+          Senior Unity Game Developer | Cross-Platform Game Logic & Optimization
+          Specialist | Delivering High-Performance Mobile Experiences
+        </p>
+        <div class="homepage_button">
+          <a href="#games" class="cta-button">View My Work</a>
+          <a
+            href="https://drive.google.com/file/d/1LRAmux2yNE1GKhafil_rGt9qIydWGl2n/view?usp=sharing"
+            class="cta-button"
+            >Resume</a
+          >
         </div>
+      </div>
     </section>
 
     <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">PROFESSIONAL SUMMARY</h2>
-            <div class="card fade-in-up">
-                <p style="font-size: 1.1rem; text-align: center; color: var(--text-light);">
-                    Dedicated and detail-oriented Game Developer with 2+ years of experience in designing and developing
-                    engaging games for real-money and multiplayer platforms. Skilled in Unity, C#, and cross-platform
-                    development, with strong expertise in gameplay programming, performance optimisation, and code
-                    reviews. Adept at working in fast-paced, deadline-driven environments, delivering high-quality
-                    results, and contributing as a key team player in challenging and creative projects. Recognised for
-                    strong analytical skills, problem-solving abilities, and calm decision-making under pressure.
-                </p>
-            </div>
-
-            <div class="card fade-in-up" style="margin-top: 2rem;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">EDUCATION</h3>
-                <div style="text-align: center;">
-                    <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-light);">Bachelor of computer
-                        application</div>
-                    <div style="color: var(--text-dim); margin-top: 0.5rem;">Bhagwan Mahavir Univesity</div>
-                </div>
-            </div>
-
-            <div class="card fade-in-up" style="margin-top: 2rem;">
-                <h3 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">KEY ACHIEVEMENTS</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div style="text-align: center;">
-                        <div
-                            style="font-size: 2.5rem; color: var(--primary-color); font-weight: 900; margin-bottom: 0.5rem;">
-                            50+</div>
-                        <div style="color: var(--text-light); font-weight: 600; margin-bottom: 0.5rem;">Games Developed
-                        </div>
-                        <div style="color: var(--text-dim); font-size: 0.9rem;">From concept to deployment</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div
-                            style="font-size: 2.5rem; color: var(--primary-color); font-weight: 900; margin-bottom: 0.5rem;">
-                            2+</div>
-                        <div style="color: var(--text-light); font-weight: 600; margin-bottom: 0.5rem;">Years Experience
-                        </div>
-                        <div style="color: var(--text-dim); font-size: 0.9rem;">Professional game development</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div
-                            style="font-size: 2.5rem; color: var(--primary-color); font-weight: 900; margin-bottom: 0.5rem;">
-                            100%</div>
-                        <div style="color: var(--text-light); font-weight: 600; margin-bottom: 0.5rem;">Project Success
-                        </div>
-                        <div style="color: var(--text-dim); font-size: 0.9rem;">On-time delivery record</div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title fade-in-up">PROFESSIONAL SUMMARY</h2>
+        <div class="card fade-in-up">
+          <p
+            style="
+              font-size: 1.1rem;
+              text-align: center;
+              color: var(--text-light);
+            "
+          >
+            Dedicated and detail-oriented Game Developer with 2+ years of
+            experience in designing and developing engaging games for real-money
+            and multiplayer platforms. Skilled in Unity, C#, and cross-platform
+            development, with strong expertise in gameplay programming,
+            performance optimisation, and code reviews. Adept at working in
+            fast-paced, deadline-driven environments, delivering high-quality
+            results, and contributing as a key team player in challenging and
+            creative projects. Recognised for strong analytical skills,
+            problem-solving abilities, and calm decision-making under pressure.
+          </p>
         </div>
+
+        <div class="card fade-in-up" style="margin-top: 2rem">
+          <h3
+            style="
+              color: var(--primary-color);
+              margin-bottom: 1rem;
+              text-align: center;
+            "
+          >
+            EDUCATION
+          </h3>
+          <div style="text-align: center">
+            <div
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--text-light);
+              "
+            >
+              Bachelor of computer application
+            </div>
+            <div style="color: var(--text-dim); margin-top: 0.5rem">
+              Bhagwan Mahavir Univesity
+            </div>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="margin-top: 2rem">
+          <h3
+            style="
+              color: var(--primary-color);
+              margin-bottom: 2rem;
+              text-align: center;
+            "
+          >
+            KEY ACHIEVEMENTS
+          </h3>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 2rem;
+            "
+          >
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 2.5rem;
+                  color: var(--primary-color);
+                  font-weight: 900;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                50+
+              </div>
+              <div
+                style="
+                  color: var(--text-light);
+                  font-weight: 600;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Games Developed
+              </div>
+              <div style="color: var(--text-dim); font-size: 0.9rem">
+                From concept to deployment
+              </div>
+            </div>
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 2.5rem;
+                  color: var(--primary-color);
+                  font-weight: 900;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                2+
+              </div>
+              <div
+                style="
+                  color: var(--text-light);
+                  font-weight: 600;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Years Experience
+              </div>
+              <div style="color: var(--text-dim); font-size: 0.9rem">
+                Professional game development
+              </div>
+            </div>
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 2.5rem;
+                  color: var(--primary-color);
+                  font-weight: 900;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                100%
+              </div>
+              <div
+                style="
+                  color: var(--text-light);
+                  font-weight: 600;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Project Success
+              </div>
+              <div style="color: var(--text-dim); font-size: 0.9rem">
+                On-time delivery record
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">SKILLS & EXPERTISE</h2>
+      <div class="container">
+        <h2 class="section-title fade-in-up">SKILLS & EXPERTISE</h2>
 
-            <div class="skills-grid fade-in-up">
-
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Shader Languages (HLSL/GLSL)</span>
-                    </div>
-                </div>
-
-                <!-- Development Tools -->
-                <div class="skill-category">
-                    <h3>Development Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Unity 2D</span>
-                        <span class="skill-tag">Unity 3D</span>
-                        <span class="skill-tag">Unity VR/AR</span>
-                        <span class="skill-tag">Unity WebGL</span>
-                        <span class="skill-tag">Unity iOS/Android</span>
-                        <span class="skill-tag">Visual Studio</span>
-                        <span class="skill-tag">Blender</span>
-                        <span class="skill-tag">ROS (Robot Operating System)</span>
-                        <span class="skill-tag">Arduino</span>
-                        <span class="skill-tag">Raspberry Pi</span>
-                        <span class="skill-tag">Git / GitHub / GitLab</span>
-                    </div>
-                </div>
-
-                <!-- Networking & Backend -->
-                <div class="skill-category">
-                    <h3>Networking & Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Socket.IO</span>
-                        <span class="skill-tag">UDP</span>
-                        <span class="skill-tag">TCP</span>
-                        <span class="skill-tag">Custom Backend Development</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Photon</span>
-                        <span class="skill-tag">Mirror</span>
-                        <span class="skill-tag">Netcode for GameObjects</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">PlayFab</span>
-                    </div>
-                </div>
-
-                <!-- Game Development -->
-                <div class="skill-category">
-                    <h3>Game Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Puzzle Games</span>
-                        <span class="skill-tag">Casual Games</span>
-                        <span class="skill-tag">Action Games</span>
-                        <span class="skill-tag">Racing Games</span>
-                        <span class="skill-tag">Educational Games</span>
-                        <span class="skill-tag">Multiplayer Games</span>
-                        <span class="skill-tag">Physics-based Games</span>
-                        <span class="skill-tag">Real-money / Casino Games</span>
-                    </div>
-                </div>
-
-                <!-- AR/VR Development -->
-                <div class="skill-category">
-                    <h3>AR/VR Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">VR Training Simulations</span>
-                        <span class="skill-tag">AR Applications (ARCore/ARKit)</span>
-                        <span class="skill-tag">XR Interaction Toolkit</span>
-                        <span class="skill-tag">Robotics VR Control</span>
-                        <span class="skill-tag">Industrial Simulations</span>
-                        <span class="skill-tag">Immersive UI/UX</span>
-                        <span class="skill-tag">Gesture & Motion Controls</span>
-                        <span class="skill-tag">Sensor & Hardware Integration</span>
-                    </div>
-                </div>
-
-                <!-- Robotics & Simulation -->
-                <div class="skill-category">
-                    <h3>Robotics & Simulation</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Robotics Simulations (Unity + ROS)</span>
-                        <span class="skill-tag">VR Robot Control Interfaces</span>
-                        <span class="skill-tag">AI-driven Robotic Behaviors</span>
-                        <span class="skill-tag">Path Planning</span>
-                        <span class="skill-tag">Physics Simulation</span>
-                        <span class="skill-tag">Industrial Automation Simulations</span>
-                        <span class="skill-tag">Sensor Emulation (Lidar, IMU, Camera)</span>
-                        <span class="skill-tag">Control Algorithms (PID, State Machines)</span>
-                    </div>
-                </div>
-
-                <!-- Additional Technical Skills -->
-                <div class="skill-category">
-                    <h3>Additional Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">UI/UX Systems in Unity</span>
-                        <span class="skill-tag">Particle Systems & VFX</span>
-                        <span class="skill-tag">Animation (Mecanim, Timeline)</span>
-                        <span class="skill-tag">Audio Systems (Spatial/Adaptive)</span>
-                        <span class="skill-tag">Mobile & XR Optimization</span>
-                        <span class="skill-tag">In-App Purchases</span>
-                        <span class="skill-tag">Advertisements Integration</span>
-                        <span class="skill-tag">Cross-Platform Deployment</span>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Problem-Solving</span>
-                        <span class="skill-tag">Time Management</span>
-                        <span class="skill-tag">Collaboration</span>
-                        <span class="skill-tag">Creative Thinking</span>
-                        <span class="skill-tag">Analytical Skills</span>
-                        <span class="skill-tag">Client Communication</span>
-                        <span class="skill-tag">Project Management (Agile/Scrum)</span>
-                    </div>
-                </div>
-
+        <div class="skills-grid fade-in-up">
+          <!-- Programming Languages -->
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Shader Languages (HLSL/GLSL)</span>
             </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="skill-category">
+            <h3>Development Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Unity 2D</span>
+              <span class="skill-tag">Unity 3D</span>
+              <span class="skill-tag">Unity VR/AR</span>
+              <span class="skill-tag">Unity WebGL</span>
+              <span class="skill-tag">Unity iOS/Android</span>
+              <span class="skill-tag">Visual Studio</span>
+              <span class="skill-tag">Blender</span>
+              <span class="skill-tag">ROS (Robot Operating System)</span>
+              <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">Git / GitHub / GitLab</span>
+            </div>
+          </div>
+
+          <!-- Networking & Backend -->
+          <div class="skill-category">
+            <h3>Networking & Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Socket.IO</span>
+              <span class="skill-tag">UDP</span>
+              <span class="skill-tag">TCP</span>
+              <span class="skill-tag">Custom Backend Development</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Photon</span>
+              <span class="skill-tag">Mirror</span>
+              <span class="skill-tag">Netcode for GameObjects</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">PlayFab</span>
+            </div>
+          </div>
+
+          <!-- Game Development -->
+          <div class="skill-category">
+            <h3>Game Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Puzzle Games</span>
+              <span class="skill-tag">Casual Games</span>
+              <span class="skill-tag">Action Games</span>
+              <span class="skill-tag">Racing Games</span>
+              <span class="skill-tag">Educational Games</span>
+              <span class="skill-tag">Multiplayer Games</span>
+              <span class="skill-tag">Physics-based Games</span>
+              <span class="skill-tag">Real-money / Casino Games</span>
+            </div>
+          </div>
+
+          <!-- AR/VR Development -->
+          <div class="skill-category">
+            <h3>AR/VR Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">VR Training Simulations</span>
+              <span class="skill-tag">AR Applications (ARCore/ARKit)</span>
+              <span class="skill-tag">XR Interaction Toolkit</span>
+              <span class="skill-tag">Robotics VR Control</span>
+              <span class="skill-tag">Industrial Simulations</span>
+              <span class="skill-tag">Immersive UI/UX</span>
+              <span class="skill-tag">Gesture & Motion Controls</span>
+              <span class="skill-tag">Sensor & Hardware Integration</span>
+            </div>
+          </div>
+
+          <!-- Robotics & Simulation -->
+          <div class="skill-category">
+            <h3>Robotics & Simulation</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Robotics Simulations (Unity + ROS)</span>
+              <span class="skill-tag">VR Robot Control Interfaces</span>
+              <span class="skill-tag">AI-driven Robotic Behaviors</span>
+              <span class="skill-tag">Path Planning</span>
+              <span class="skill-tag">Physics Simulation</span>
+              <span class="skill-tag">Industrial Automation Simulations</span>
+              <span class="skill-tag"
+                >Sensor Emulation (Lidar, IMU, Camera)</span
+              >
+              <span class="skill-tag"
+                >Control Algorithms (PID, State Machines)</span
+              >
+            </div>
+          </div>
+
+          <!-- Additional Technical Skills -->
+          <div class="skill-category">
+            <h3>Additional Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">UI/UX Systems in Unity</span>
+              <span class="skill-tag">Particle Systems & VFX</span>
+              <span class="skill-tag">Animation (Mecanim, Timeline)</span>
+              <span class="skill-tag">Audio Systems (Spatial/Adaptive)</span>
+              <span class="skill-tag">Mobile & XR Optimization</span>
+              <span class="skill-tag">In-App Purchases</span>
+              <span class="skill-tag">Advertisements Integration</span>
+              <span class="skill-tag">Cross-Platform Deployment</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Problem-Solving</span>
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Collaboration</span>
+              <span class="skill-tag">Creative Thinking</span>
+              <span class="skill-tag">Analytical Skills</span>
+              <span class="skill-tag">Client Communication</span>
+              <span class="skill-tag">Project Management (Agile/Scrum)</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
     <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">WORK EXPERIENCE</h2>
+      <div class="container">
+        <h2 class="section-title fade-in-up">WORK EXPERIENCE</h2>
 
-            <div class="experience-item fade-in-up">
-                <div class="job-title">Sr. Unity Game Developer</div>
-                <div class="company-info">BooBoo Games Pvt Ltd - Ahmedabad • June 2025 - August 2025</div>
-                <div class="job-description">
-                    <ul>
-                        <li>Optimized performance and memory usage for mobile devices to ensure smooth gameplay</li>
-                        <li>Proficient in creating custom native Android and iOS plugins and integrating them seamlessly with Unity</li>
-                        <li>Strong skills in gameplay logic design, implementation, and optimisation for engaging player experiences</li>
-                        <li>Experienced in UI/UX design, animations, and game state management.</li>
-                        <li>Experienced in cross-platform development and integration, including Android ↔ Unity, iOS ↔
-                            Unity,WEBGL ↔ Unity, Unity ↔ Node.js</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item fade-in-up">
-                <div class="job-title">Unity Game Developer</div>
-                <div class="company-info">Crystal InfoTech - Surat • August 2023 - June 2025</div>
-                <div class="job-description">
-                    <p>Worked on multiple client projects with focus on multiplayer gaming and interactive entertainment.</p>
-                    <ul>
-                        <li>Developed and released multiple mobile games using Unity</li>
-                        <li>Built and deployed games for both Android and iOS platforms, ensuring smooth functionality and compatibility.</li>
-                        <li>Gained expertise in particle systems, animations, and audio sources for engaging multimedia experiences</li>
-                        <li>Built user-friendly, cross-platform apps that enhanced creativity and music production capabilities</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item fade-in-up">
-                <div class="job-title">Unity Game Developer</div>
-                <div class="company-info">Reveralto Infotech - Surat • May 2023 - July 2023</div>
-                <div class="job-description">
-                    <p>Developed innovative mobile applications focusing on music production and social content creation.</p>
-                    <ul>
-                        <li>Developed and maintained Unity-based games for mobile platforms</li>
-                        <li>Worked closely with designers and artists to create engaging and immersive experiences</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="experience-item fade-in-up">
+          <div class="job-title">Sr. Unity Game Developer</div>
+          <div class="company-info">
+            BooBoo Games Pvt Ltd - Ahmedabad • June 2025 - August 2025
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Optimized performance and memory usage for mobile devices to
+                ensure smooth gameplay
+              </li>
+              <li>
+                Proficient in creating custom native Android and iOS plugins and
+                integrating them seamlessly with Unity
+              </li>
+              <li>
+                Strong skills in gameplay logic design, implementation, and
+                optimisation for engaging player experiences
+              </li>
+              <li>
+                Experienced in UI/UX design, animations, and game state
+                management.
+              </li>
+              <li>
+                Experienced in cross-platform development and integration,
+                including Android ↔ Unity, iOS ↔ Unity,WEBGL ↔ Unity, Unity ↔
+                Node.js
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="experience-item fade-in-up">
+          <div class="job-title">Unity Game Developer</div>
+          <div class="company-info">
+            Crystal InfoTech - Surat • August 2023 - June 2025
+          </div>
+          <div class="job-description">
+            <p>
+              Worked on multiple client projects with focus on multiplayer
+              gaming and interactive entertainment.
+            </p>
+            <ul>
+              <li>Developed and released multiple mobile games using Unity</li>
+              <li>
+                Built and deployed games for both Android and iOS platforms,
+                ensuring smooth functionality and compatibility.
+              </li>
+              <li>
+                Gained expertise in particle systems, animations, and audio
+                sources for engaging multimedia experiences
+              </li>
+              <li>
+                Built user-friendly, cross-platform apps that enhanced
+                creativity and music production capabilities
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-item fade-in-up">
+          <div class="job-title">Unity Game Developer</div>
+          <div class="company-info">
+            Reveralto Infotech - Surat • May 2023 - July 2023
+          </div>
+          <div class="job-description">
+            <p>
+              Developed innovative mobile applications focusing on music
+              production and social content creation.
+            </p>
+            <ul>
+              <li>
+                Developed and maintained Unity-based games for mobile platforms
+              </li>
+              <li>
+                Worked closely with designers and artists to create engaging and
+                immersive experiences
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="games" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">GAME PORTFOLIO</h2>
-            <p
-                style="text-align: center; color: var(--text-dim); font-size: 1.2rem; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                A showcase of games I've developed, featuring casual gaming platforms, multiplayer experiences, and
-                engaging mobile games.
-            </p>
+      <div class="container">
+        <h2 class="section-title fade-in-up">GAME PORTFOLIO</h2>
+        <p
+          style="
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          A showcase of games I've developed, featuring casual gaming platforms,
+          multiplayer experiences, and engaging mobile games.
+        </p>
 
-            <div class="games-grid">
-
-                <div class="game-category fade-in-up">
-                    <h3
-                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
-                        Puzzle GAMES</h3>
-                    <div class="games-row">
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Bird Sort Mania Color Puzzle.png"
-                                    alt="Bird Sort Mania Color Puzzle">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/Bird%20Sort%20Mania%20Color%20Puzzle/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.game.bird.sort.mania.color.puzzle">Bird
-                                    Sort Mania Color Puzzle</a>
-                                <p>Timeless board game of chance and strategy — roll the dice, move your tokens, and be
-                                    the first to reach home.</p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Puzzle Candy Match Block.jpg"
-                                    alt="Puzzle Candy Match Block">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/Puzzle%20Candy%20Match%20Block/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit">Puzzle Candy
-                                    Match Block</a>
-                                <p>The premise of puzzles Candy is simple yet engaging: players are presented with a
-                                    grid filled with various types of candies of
-                                    different colors and shapes.</p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Royal Rescue.jpg" alt="Royal Rescue">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/Royal%20Rescue/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue">Royal
-                                    Rescue</a>
-                                <p>Rescue Hero: Pull the Pin The gameplay revolves around pulling pins in the right
-                                    order to free trapped characters while
-                                    avoiding traps, hazards, and enemies.</p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Traffic Slide Saga.png"
-                                    alt="Traffic Slide Saga">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/Traffic%20Slide%20Saga/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga">Traffic
-                                    Slide Saga</a>
-                                <div class="description">
-                                    <p>Timeless board game of chance and strategy — roll the dice,
-                                        move
-                                        your tokens, and be
-                                        the first to reach home.</p>
-                                    <div class="more-text">
-                                        Timeless board game of chance and strategy — roll the dice, move your tokens,
-                                        and be
-                                        the first to reach home.
-                                    </div>
-                                </div>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Water Sort Puzzle Quest.png"
-                                    alt="Water Sort Puzzle Quest">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/WaterSortPuzzleQuest/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest">Water
-                                    Sort Puzzle Quest</a>
-                                <p class="description"> Water Sort Puzzle Quest is Challenging Puzzles: Over 1,000
-                                    levels of increasing
-                                    difficulty to keep your mind engaged. Each level presents a new challenge.</p>
-                                <div class="more-text">
-                                    Water Sort Puzzle Quest is a game designed to challenge your brain with over 1,000
-                                    levels of puzzles. As you progress through the levels, the difficulty increases.
-                                    Each level presents a unique challenge to keep you engaged and test your
-                                    problem-solving skills. The game’s intuitive controls and colorful design make it
-                                    easy for players of all ages to enjoy.
-                                </div>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+        <div class="games-grid">
+          <div class="game-category fade-in-up">
+            <h3
+              style="
+                color: var(--primary-color);
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                text-align: center;
+              "
+            >
+              Puzzle GAMES
+            </h3>
+            <div class="games-row">
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Bird Sort Mania Color Puzzle.png"
+                    alt="Bird Sort Mania Color Puzzle"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/Bird%20Sort%20Mania%20Color%20Puzzle/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
                 </div>
-
-                <div class="game-category fade-in-up">
-                    <h3
-                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
-                        Educational GAMES</h3>
-                    <div class="games-row">
-                        <div class="game-card">
-                            <div class="game-image">
-                                <img src="../manav-savani/games/Word Connect Quest.jpg"
-                                    alt="Word Connect Quest">
-                                <a class="play-button"
-                                    href="https://manav-savani.github.io/manav-savani/games/Word%20Connect%20Quest/index.html"
-                                    target="_blank">
-                                    <i class="fas fa-gamepad"></i> Play
-                                </a>
-                            </div>
-                            <div class="game-info">
-                                <a href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest">Word
-                                    Connect Quest</a>
-                                <p>Word Connect Quest is the ultimate word puzzle game that combines fun, relaxation,
-                                    and mental exercise. </p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">Mobile</span>
-                                    <span class="tech-tag">WEBGL</span>
-                                    <span class="tech-tag">In-app Purchasing</span>
-                                    <span class="tech-tag">Advertisment</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="game-info">
+                  <div class="heading">Bird Sort Mania Color Puzzle</div>
+                  <div class="description">
+                    <p>
+                      Timeless board game of chance and strategy — roll the
+                      dice, move your tokens, and be the first to reach home.
+                    </p>
+                    <div class="more-text">
+                      Timeless board game of chance and strategy — roll the
+                      dice, move your tokens, and be the first to reach home.
                     </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.game.bird.sort.mania.color.puzzle"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
                 </div>
+              </div>
 
-                <div class="game-category fade-in-up">
-                    <h3
-                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
-                        VR GAMES & Simulations
-                    </h3>
-                    <div class="games-row">
-                        <div class="game-card">
-                            <div class="game-image">
-                                <!-- Video with progress bar + muted by default -->
-                                <video controls muted playsinline
-                                    poster="../manav-savani/games/VR Games/CNC_Thub.png" width="100%"
-                                    style="border-radius: 10px;">
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Puzzle Candy Match Block.jpg"
+                    alt="Puzzle Candy Match Block"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/Puzzle%20Candy%20Match%20Block/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Puzzle Candy Match Block</div>
+                  <div class="description">
+                    <p>
+                      The premise of puzzles Candy is simple yet engaging:
+                      players are presented with a grid filled with various
+                      types of candies of different colors and shapes.
+                    </p>
 
-                                    <source src="../manav-savani/games/VR Games/CNC machine.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-                            <div class="game-info">
-                                <a href="#">
-                                    CNC Machine VR Simulation
-                                </a>
-                                <p>A highly immersive CNC Machine VR simulation designed for training and interactive
-                                    learning.</p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">VR</span>
-                                    <span class="tech-tag">Simulation</span>
-                                    <span class="tech-tag">Google sheet</span>
-                                    <span class="tech-tag">Training Module</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="game-card">
-                            <div class="game-image">
-
-                                <video controls muted playsinline
-                                    poster="../manav-savani/games/VR Games/DroneSimulator_Thub.png"
-                                    width="100%" style="border-radius: 10px;">
-                                    <source src="../manav-savani/games/VR Games/Drone Simulator.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-                            <div class="game-info">
-                                <a href="#">
-                                    Drone Simulator VR
-                                </a>
-                                <p>An immersive drone simulation experience where players control various drone types
-                                    like Logistic, Surveillance, and more, using real-world mapping and custom APIs.</p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">VR</span>
-                                    <span class="tech-tag">Drone Simulation</span>
-                                    <span class="tech-tag">Google Maps API</span>
-                                    <span class="tech-tag">Custom Controller</span>
-                                </div>
-                            </div>
-                        </div>
-
-
+                    <div class="more-text">
+                      The premise of puzzles Candy is simple yet engaging:
+                      players are presented with a grid filled with various
+                      types of candies of different colors and shapes.
                     </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
                 </div>
+              </div>
 
-
-
-                <div class="game-category fade-in-up">
-                    <h3
-                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
-                        VR Control Robotics Simulations
-                    </h3>
-                    <div class="games-row">
-                        <div class="game-card">
-                            <div class="game-image">
-                                <video controls muted playsinline loop
-                                    poster="../manav-savani/games/VR Games/Robot_Tumb.png" width="100%"
-                                    style="border-radius: 10px;">
-                                <video controls muted playsinline loop
-                                    poster="../manav-savani/games/VR Games/Robot_Tumb.png" width="100%"
-                                    style="border-radius: 10px;">
-
-                                    <source src="../manav-savani/games/VR Games/Robot VR Control.mp4"
-                                        type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="game-info">
-                                <a href="#">
-                                    VR Control Robotics Simulation
-                                </a>
-                                <p>
-                                    A cutting-edge VR Control Robotics project where a real robot is remotely operated
-                                    through a VR environment.
-                                    This system allows the user to control the physical robot’s movements and actions
-                                    with high precision,
-                                    offering an immersive interface for robotics training, defense, and industrial
-                                    applications.
-                                </p>
-                                <div class="game-tech">
-                                    <span class="tech-tag">Unity</span>
-                                    <span class="tech-tag">VR</span>
-                                    <span class="tech-tag">ROS</span>
-                                    <span class="tech-tag">Simulation</span>
-                                    <span class="tech-tag">IOT</span>
-                                </div>
-                            </div>
-                        </div>
-
-
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Royal Rescue.jpg"
+                    alt="Royal Rescue"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/Royal%20Rescue/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Royal Rescue</div>
+                  <div class="description">
+                    <p>
+                      Rescue Hero: Pull the Pin The gameplay revolves around
+                      pulling pins in the right order to free trapped characters
+                      while avoiding traps, hazards, and enemies.
+                    </p>
+                    <div class="more-text">
+                      Rescue Hero: Pull the Pin The gameplay revolves around
+                      pulling pins in the right order to free trapped characters
+                      while avoiding traps, hazards, and enemies.
                     </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Traffic Slide Saga.png"
+                    alt="Traffic Slide Saga"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/Traffic%20Slide%20Saga/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Traffic Slide Saga</div>
+                  <div class="description">
+                    <p>
+                      Timeless board game of chance and strategy — roll the
+                      dice, move your tokens, and be the first to reach home.
+                    </p>
+                    <div class="more-text">
+                      Timeless board game of chance and strategy — roll the
+                      dice, move your tokens, and be the first to reach home.
+                    </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
 
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Water Sort Puzzle Quest.png"
+                    alt="Water Sort Puzzle Quest"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/WaterSortPuzzleQuest/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Water Sort Puzzle Quest</div>
+                  <div class="description">
+                    <p>
+                      Water Sort Puzzle Quest is Challenging Puzzles: Over 1,000
+                      levels of increasing difficulty to keep your mind engaged.
+                      Each level presents a new challenge.
+                    </p>
+                    <div class="more-text">
+                      Water Sort Puzzle Quest is a game designed to challenge
+                      your brain with over 1,000 levels of puzzles. As you
+                      progress through the levels, the difficulty increases.
+                      Each level presents a unique challenge to keep you engaged
+                      and test your problem-solving skills. The game’s intuitive
+                      controls and colorful design make it easy for players of
+                      all ages to enjoy.
+                    </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="game-category fade-in-up">
+            <h3
+              style="
+                color: var(--primary-color);
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                text-align: center;
+              "
+            >
+              Educational GAMES
+            </h3>
+            <div class="games-row">
+              <div class="game-card">
+                <div class="game-image">
+                  <img
+                    src="../manav-savani/games/Word Connect Quest.jpg"
+                    alt="Word Connect Quest"
+                  />
+                  <a
+                    class="play-button"
+                    href="https://manav-savani.github.io/manav-savani/games/Word%20Connect%20Quest/index.html"
+                    target="_blank"
+                  >
+                    <i class="fas fa-gamepad"></i> Play
+                  </a>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Word Connect Quest</div>
+                  <div class="description">
+                    <p>
+                      Word Connect Quest is the ultimate word puzzle game that
+                      combines fun, relaxation, and mental exercise.
+                    </p>
+                    <div class="more-text">
+                      Word Connect Quest is the ultimate word puzzle game that
+                      combines fun, relaxation, and mental exercise.
+                    </div>
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">WEBGL</span>
+                    <span class="tech-tag">In-app Purchasing</span>
+                    <span class="tech-tag">Advertisment</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-category fade-in-up">
+            <h3
+              style="
+                color: var(--primary-color);
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                text-align: center;
+              "
+            >
+              VR GAMES & Simulations
+            </h3>
+            <div class="games-row">
+              <div class="game-card">
+                <div class="game-image">
+                  <!-- Video with progress bar + muted by default -->
+                  <!-- <video
+                    controls
+                    muted
+                    playsinline
+                    poster="../manav-savani/games/VR Games/CNC_Thub.png"
+                    width="100%"
+                    style="border-radius: 10px"
+                  >
+                    <source
+                      src="../manav-savani/games/VR Games/CNC machine.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video> -->
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/0LjPgmfMGZA?si=UTl1ruWNk1z5_4G2"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="game-info">
+                  <div class="heading">CNC Machine VR Simulation</div>
+                  <p>
+                    A highly immersive CNC Machine VR simulation designed for
+                    training and interactive learning.
+                  </p>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">VR</span>
+                    <span class="tech-tag">Simulation</span>
+                    <span class="tech-tag">Google sheet</span>
+                    <span class="tech-tag">Training Module</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-card">
+                <div class="game-image">
+                  <video
+                    controls
+                    muted
+                    playsinline
+                    poster="../manav-savani/games/VR Games/DroneSimulator_Thub.png"
+                    width="100%"
+                    style="border-radius: 10px"
+                  >
+                    <source
+                      src="../manav-savani/games/VR Games/Drone Simulator.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="game-info">
+                  <div class="heading">Drone Simulator VR</div>
+                  <p>
+                    An immersive drone simulation experience where players
+                    control various drone types like Logistic
+                  </p>
+
+                  <div class="more-text">
+                    , Surveillance, and more, using real-world mapping and
+                    custom APIs.
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">VR</span>
+                    <span class="tech-tag">Drone Simulation</span>
+                    <span class="tech-tag">Google Maps API</span>
+                    <span class="tech-tag">Custom Controller</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-category fade-in-up">
+            <h3
+              style="
+                color: var(--primary-color);
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                text-align: center;
+              "
+            >
+              VR Control Robotics Simulations
+            </h3>
+            <div class="games-row">
+              <div class="game-card">
+                <div class="game-image">
+                  <video
+                    controls
+                    muted
+                    playsinline
+                    loop
+                    poster="../manav-savani/games/VR Games/Robot_Tumb.png"
+                    width="100%"
+                    style="border-radius: 10px"
+                  >
+                    <source
+                      src="../manav-savani/games/VR Games/Robot VR Control.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="game-info">
+                  <div class="heading">VR Control Robotics Simulation</div>
+                  <p>
+                    A cutting-edge VR Control Robotics project where a real
+                    robot is remotely operated through a VR
+                  </p>
+
+                  <div class="more-text">
+                    environment. This system allows the user to control the
+                    physical robot’s movements and actions with high precision,
+                    offering an immersive interface for robotics training,
+                    defense, and industrial applications.
+                  </div>
+                  <div class="game-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">VR</span>
+                    <span class="tech-tag">ROS</span>
+                    <span class="tech-tag">Simulation</span>
+                    <span class="tech-tag">IOT</span>
+                  </div>
+                  <div class="google-playstore-button">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.game.bird.sort.mania.color.puzzle"
+                      target="_blank"
+                    >
+                      <img
+                        src="./games/google-playstore.svg"
+                        alt="google-playstore"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">GET IN TOUCH</h2>
-            <p
-                style="text-align: center; color: var(--text-dim); font-size: 1.2rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Ready to bring your game ideas to life? Let's discuss your next project and create something amazing
-                together.
-            </p>
-            <div class="contact-grid fade-in-up">
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <h3>Phone</h3>
-                    <p>+91 9157694014</p>
-                    <a href="tel:+919157694014"
-                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Call Now</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <h3>Email</h3>
-                    <p>manavsavaniwork@gmail.com</p>
-                    <a href="mailto:manavsavaniwork@gmail.com"
-                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Send Email</a>
-                </div>
+      <div class="container">
+        <h2 class="section-title fade-in-up">GET IN TOUCH</h2>
+        <p
+          style="
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Ready to bring your game ideas to life? Let's discuss your next
+          project and create something amazing together.
+        </p>
+        <div class="contact-grid fade-in-up">
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <h3>Phone</h3>
+            <p>+91 9157694014</p>
+            <a
+              href="tel:+919157694014"
+              style="
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >Call Now</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <h3>Email</h3>
+            <p>manavsavaniwork@gmail.com</p>
+            <a
+              href="mailto:manavsavaniwork@gmail.com"
+              style="
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >Send Email</a
+            >
+          </div>
 
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <h3>LinkedIn</h3>
+            <p>Professional Network</p>
+            <a
+              href="https://www.linkedin.com/in/manav-savani-4107ab34a"
+              target="_blank"
+              style="
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >Connect with me</a
+            >
+          </div>
 
-                <div class="contact-item">
-                    <span class="contact-icon">💼</span>
-                    <h3>LinkedIn</h3>
-                    <p>Professional Network</p>
-                    <a href="https://www.linkedin.com/in/manav-savani-4107ab34a"
-                        target="_blank"
-                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Connect with
-                        me</a>
-                </div>
+          <div class="contact-item">
+            <span class="contact-icon">🟢</span>
+            <h3>Upwork</h3>
+            <p>Hire Me on Upwork</p>
+            <a
+              href="https://www.upwork.com/freelancers/~0157ea31524c37edcc?qpn-profile-completeness=employment"
+              target="_blank"
+              style="
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >Check profile
+            </a>
+          </div>
 
-                <div class="contact-item">
-                    <span class="contact-icon">🟢</span>
-                    <h3>Upwork</h3>
-                    <p>Hire Me on Upwork</p>
-                    <a href="https://www.upwork.com/freelancers/~0157ea31524c37edcc?qpn-profile-completeness=employment"
-                        target="_blank"
-                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Check profile
-                    </a>
-                </div>
-
-                <!-- <div class="contact-item">
+          <!-- <div class="contact-item">
                     <span class="contact-icon">🎨</span>
                     <h3>Fiverr</h3>
                     <p>Freelance Services</p>
@@ -661,29 +1025,47 @@
                     <a href="https://www.freelancer.com/u/dharmikanghan92?sb=t" target="_blank"
                         style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">View Profile</a>
                 </div> -->
-
-            </div>
-
-            <div class="cta-section fade-in-up" style="text-align: center; margin-top: 4rem;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.5rem;">Ready to Start Your
-                    Project?</h3>
-                <p style="color: var(--text-dim); margin-bottom: 2rem;">Let's discuss your game development needs and
-                    create something extraordinary.</p>
-                <a href="tel:+919157694014" class="cta-button"
-                    style="display: inline-block; background: var(--glass-bg); color: var(--text-light); border: 1px solid var(--primary-color);">Schedule
-                    a Call</a>
-            </div>
         </div>
+
+        <div
+          class="cta-section fade-in-up"
+          style="text-align: center; margin-top: 4rem"
+        >
+          <h3
+            style="
+              color: var(--primary-color);
+              margin-bottom: 1rem;
+              font-size: 1.5rem;
+            "
+          >
+            Ready to Start Your Project?
+          </h3>
+          <p style="color: var(--text-dim); margin-bottom: 2rem">
+            Let's discuss your game development needs and create something
+            extraordinary.
+          </p>
+          <a
+            href="tel:+919157694014"
+            class="cta-button"
+            style="
+              display: inline-block;
+              background: var(--glass-bg);
+              color: var(--text-light);
+              border: 1px solid var(--primary-color);
+            "
+            >Schedule a Call</a
+          >
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Manav Savani. All rights reserved.</p>
-            <p style="margin-top: 1rem; color: var(--text-dim);">Unity Developer </p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Manav Savani. All rights reserved.</p>
+        <p style="margin-top: 1rem; color: var(--text-dim)">Unity Developer</p>
+      </div>
     </footer>
 
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
