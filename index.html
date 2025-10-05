@@ -6,710 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manav Savani - Unity Game Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
 
     <meta name="keywords"
         content="Unity Developer, Game Developer, C#, Mobile Games, Casual Games,Puzzle Games, Unity 2D, Unity 3D">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #00ff88;
-            --secondary-color: #ff6b35;
-            --accent-color: #7c3aed;
-            --dark-bg: #0a0a0a;
-            --darker-bg: #050505;
-            --card-bg: rgba(20, 20, 30, 0.9);
-            --text-light: #e2e8f0;
-            --text-dim: #94a3b8;
-            --glow: 0 0 20px rgba(0, 255, 136, 0.3);
-        }
-
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background: var(--dark-bg);
-            color: var(--text-light);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        .bg-animation::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(0, 255, 136, 0.3) 0%, transparent 50%);
-            animation: float 20s ease-in-out infinite;
-        }
-
-        @keyframes gradientShift {
-
-            0%,
-            100% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translate(0px, 0px) rotate(0deg);
-            }
-
-            33% {
-                transform: translate(30px, -30px) rotate(120deg);
-            }
-
-            66% {
-                transform: translate(-20px, 20px) rotate(240deg);
-            }
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            background: rgba(10, 10, 10, 0.8);
-            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
-            padding: 1rem 0;
-            transition: all 0.3s ease;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            text-shadow: var(--glow);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-            text-shadow: 0 0 10px var(--primary-color);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            z-index: 2;
-            max-width: 800px;
-            padding: 2rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero-title {
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(2.5rem, 6vw, 4rem); 
-            font-weight: 900;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 3s ease infinite;
-            text-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
-            line-height: 1.1; 
-        }
-
-        .hero-subtitle {
-            font-size: 1.1rem; 
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-            font-weight: 300;
-            letter-spacing: 1px; 
-        }
-
-
-      .hero-description {
-            font-size: 1rem;
-            margin-bottom: 2rem; 
-            color: var(--text-light);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.5;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-            color: var(--dark-bg);
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 40px 0;
-            position: relative;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            font-family: 'Orbitron', monospace;
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--primary-color);
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            border-radius: 2px;
-        }
-
-        /* Cards */
-        .card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(0, 255, 136, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(0, 255, 136, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 136, 0.1);
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .skill-category {
-            text-align: center;
-        }
-
-        .skill-category h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-
-        .skill-tag {
-            background: rgba(0, 255, 136, 0.1);
-            color: var(--text-light);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(0, 255, 136, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .skill-tag:hover {
-            background: rgba(0, 255, 136, 0.2);
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
-        }
-
-        .experience-item {
-            position: relative;
-            padding-left: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .experience-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            background: var(--primary-color);
-            border-radius: 50%;
-            box-shadow: 0 0 15px var(--primary-color);
-        }
-
-        .experience-item:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            left: 9px;
-            top: 20px;
-            width: 2px;
-            height: calc(100% + 1rem);
-            background: linear-gradient(180deg, var(--primary-color), transparent);
-        }
-
-        .job-title {
-            font-size: 1.4rem;
-            color: var(--primary-color);
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .company-info {
-            color: var(--secondary-color);
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-
-        .job-description {
-            color: var(--text-dim);
-            line-height: 1.6;
-        }
-
-        .job-description ul {
-            margin-left: 1rem;
-            margin-top: 1rem;
-        }
-
-        .job-description li {
-            margin-bottom: 0.5rem;
-            position: relative;
-        }
-
-        .job-description li::before {
-            content: '▸';
-            color: var(--primary-color);
-            position: absolute;
-            left: -1rem;
-        }
-
-        .games-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-        }
-
-        .game-category {
-            margin-bottom: 3rem;
-        }
-
-        .games-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .game-card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid rgba(0, 255, 136, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .game-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .game-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(0, 255, 136, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 136, 0.1);
-        }
-
-        .game-card:hover::before {
-            opacity: 1;
-        }
-
-        .game-image {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .game-image img {
-            transition: transform 0.3s ease;
-        }
-
-        .game-card {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
-        }
-
-        .game-image {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .game-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.4s ease;
-            border-radius: 10px;
-            display: block;
-        }
-
-        .game-image:hover img {
-            opacity: 0.3;
-            filter: blur(2px);
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(135deg, #ff6b6b, #ff4757);
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 12px 26px;
-            border-radius: 50px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-            opacity: 0;
-            transition: all 0.4s ease;
-            z-index: 2;
-        }
-
-        .play-button i {
-            font-size: 18px;
-        }
-
-        .game-image:hover .play-button {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1.05);
-        }
-
-        .play-button:hover {
-            box-shadow: 0 0 15px #ff6b6b;
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-
-        .game-card:hover .game-image img {
-            transform: scale(1.05);
-        }
-
-        .game-info {
-            padding: 1.5rem;
-        }
-
-        .game-info a {
-            color: var(--primary-color);
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            text-decoration: none;
-        }
-
-        .game-info p {
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-
-        .game-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tech-tag {
-            background: rgba(0, 255, 136, 0.1);
-            color: var(--text-light);
-            padding: 6px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid rgba(0, 255, 136, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .tech-tag:hover {
-            background: rgba(0, 255, 136, 0.2);
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
-        }
-
-        .author-info h4 {
-            color: var(--primary-color);
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-
-        .author-info p {
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .contact-item {
-            padding: 2rem;
-            background: var(--card-bg);
-            border-radius: 15px;
-            border: 1px solid rgba(0, 255, 136, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 255, 136, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .footer {
-            background: var(--darker-bg);
-            padding: 3rem 0;
-            text-align: center;
-            border-top: 1px solid rgba(0, 255, 136, 0.1);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease forwards;
-            opacity: 0;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            .experience-item {
-                padding-left: 2rem;
-            }
-
-            .games-row {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .game-category h3 {
-                font-size: 1.5rem;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .cta-section .cta-button {
-                display: block;
-                margin: 0.5rem auto;
-                width: 200px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .game-card {
-                margin-bottom: 1rem;
-            }
-
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--darker-bg);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, var(--accent-color), var(--primary-color));
-        }
     </style>
 </head>
 
@@ -759,10 +61,18 @@
             <div class="card fade-in-up" style="margin-top: 2rem;">
                 <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">EDUCATION</h3>
                 <div style="text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-light);">Master of computer
+                        application</div>
+                    <div style="color: var(--text-dim); margin-top: 0.5rem;">jain Univesity</div>
+                </div>
+            </div>
+
+            <div class="card fade-in-up" style="margin-top: 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">EDUCATION</h3>
+                <div style="text-align: center;">
                     <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-light);">Bachelor of computer
                         application</div>
-                    <div style="color: var(--text-dim); margin-top: 0.5rem;">Bhagwan mahavir university • 2021 - 2024
-                    </div>
+                    <div style="color: var(--text-dim); margin-top: 0.5rem;">Veer Narmad South Gujrat Univesity</div>
                 </div>
             </div>
 
@@ -772,7 +82,7 @@
                     <div style="text-align: center;">
                         <div
                             style="font-size: 2.5rem; color: var(--primary-color); font-weight: 900; margin-bottom: 0.5rem;">
-                            15+</div>
+                            50+</div>
                         <div style="color: var(--text-light); font-weight: 600; margin-bottom: 0.5rem;">Games Developed
                         </div>
                         <div style="color: var(--text-dim); font-size: 0.9rem;">From concept to deployment</div>
@@ -780,7 +90,7 @@
                     <div style="text-align: center;">
                         <div
                             style="font-size: 2.5rem; color: var(--primary-color); font-weight: 900; margin-bottom: 0.5rem;">
-                            2+</div>
+                            4+</div>
                         <div style="color: var(--text-light); font-weight: 600; margin-bottom: 0.5rem;">Years Experience
                         </div>
                         <div style="color: var(--text-dim); font-size: 0.9rem;">Professional game development</div>
@@ -803,27 +113,56 @@
             <h2 class="section-title fade-in-up">SKILLS & EXPERTISE</h2>
 
             <div class="skills-grid fade-in-up">
+
+                <!-- Programming Languages -->
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">C</span>
                         <span class="skill-tag">C++</span>
                         <span class="skill-tag">C#</span>
-                        <span class="skill-tag">UI System</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Shader Languages (HLSL/GLSL)</span>
                     </div>
                 </div>
 
+                <!-- Development Tools -->
                 <div class="skill-category">
                     <h3>Development Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Unity 2D</span>
                         <span class="skill-tag">Unity 3D</span>
-                        <span class="skill-tag">Unity WEBGL</span>
-                        <span class="skill-tag">Unity IOS</span>
+                        <span class="skill-tag">Unity VR/AR</span>
+                        <span class="skill-tag">Unity WebGL</span>
+                        <span class="skill-tag">Unity iOS/Android</span>
                         <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">Blender</span>
+                        <span class="skill-tag">ROS (Robot Operating System)</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Git / GitHub / GitLab</span>
                     </div>
                 </div>
 
+                <!-- Networking & Backend -->
+                <div class="skill-category">
+                    <h3>Networking & Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Socket.IO</span>
+                        <span class="skill-tag">UDP</span>
+                        <span class="skill-tag">TCP</span>
+                        <span class="skill-tag">Custom Backend Development</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Photon</span>
+                        <span class="skill-tag">Mirror</span>
+                        <span class="skill-tag">Netcode for GameObjects</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">PlayFab</span>
+                    </div>
+                </div>
+
+                <!-- Game Development -->
                 <div class="skill-category">
                     <h3>Game Development</h3>
                     <div class="skill-tags">
@@ -832,23 +171,77 @@
                         <span class="skill-tag">Action Games</span>
                         <span class="skill-tag">Racing Games</span>
                         <span class="skill-tag">Educational Games</span>
+                        <span class="skill-tag">Multiplayer Games</span>
+                        <span class="skill-tag">Physics-based Games</span>
+                        <span class="skill-tag">Real-money / Casino Games</span>
                     </div>
                 </div>
 
+                <!-- AR/VR Development -->
+                <div class="skill-category">
+                    <h3>AR/VR Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VR Training Simulations</span>
+                        <span class="skill-tag">AR Applications (ARCore/ARKit)</span>
+                        <span class="skill-tag">XR Interaction Toolkit</span>
+                        <span class="skill-tag">Robotics VR Control</span>
+                        <span class="skill-tag">Industrial Simulations</span>
+                        <span class="skill-tag">Immersive UI/UX</span>
+                        <span class="skill-tag">Gesture & Motion Controls</span>
+                        <span class="skill-tag">Sensor & Hardware Integration</span>
+                    </div>
+                </div>
 
+                <!-- Robotics & Simulation -->
+                <div class="skill-category">
+                    <h3>Robotics & Simulation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Robotics Simulations (Unity + ROS)</span>
+                        <span class="skill-tag">VR Robot Control Interfaces</span>
+                        <span class="skill-tag">AI-driven Robotic Behaviors</span>
+                        <span class="skill-tag">Path Planning</span>
+                        <span class="skill-tag">Physics Simulation</span>
+                        <span class="skill-tag">Industrial Automation Simulations</span>
+                        <span class="skill-tag">Sensor Emulation (Lidar, IMU, Camera)</span>
+                        <span class="skill-tag">Control Algorithms (PID, State Machines)</span>
+                    </div>
+                </div>
+
+                <!-- Additional Technical Skills -->
+                <div class="skill-category">
+                    <h3>Additional Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UI/UX Systems in Unity</span>
+                        <span class="skill-tag">Particle Systems & VFX</span>
+                        <span class="skill-tag">Animation (Mecanim, Timeline)</span>
+                        <span class="skill-tag">Audio Systems (Spatial/Adaptive)</span>
+                        <span class="skill-tag">Mobile & XR Optimization</span>
+                        <span class="skill-tag">In-App Purchases</span>
+                        <span class="skill-tag">Advertisements Integration</span>
+                        <span class="skill-tag">Cross-Platform Deployment</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
                 <div class="skill-category">
                     <h3>Soft Skills</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Problem-solving</span>
+                        <span class="skill-tag">Problem-Solving</span>
                         <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Collaboration</span>
+                        <span class="skill-tag">Creative Thinking</span>
+                        <span class="skill-tag">Analytical Skills</span>
+                        <span class="skill-tag">Client Communication</span>
+                        <span class="skill-tag">Project Management (Agile/Scrum)</span>
                     </div>
                 </div>
-            </div>
 
-            
+            </div>
         </div>
     </section>
+
+
 
     <section id="experience" class="section">
         <div class="container">
@@ -902,13 +295,16 @@
             <h2 class="section-title fade-in-up">GAME PORTFOLIO</h2>
             <p
                 style="text-align: center; color: var(--text-dim); font-size: 1.2rem; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                A showcase of games I've developed, featuring casual gaming platforms, multiplayer experiences, and engaging mobile games.
+                A showcase of games I've developed, featuring casual gaming platforms, multiplayer experiences, and
+                engaging mobile games.
             </p>
 
             <div class="games-grid">
-                
+
                 <div class="game-category fade-in-up">
-                    <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">Puzzle GAMES</h3>
+                    <h3
+                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
+                        Puzzle GAMES</h3>
                     <div class="games-row">
                         <div class="game-card">
                             <div class="game-image">
@@ -949,9 +345,10 @@
                                 </a>
                             </div>
                             <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit">Puzzle Candy Match Block</a>
-                                <p>The premise of puzzles Candy is simple yet engaging: players are presented with a grid filled with various types of candies of 
+                                <a href="https://play.google.com/store/apps/details?id=com.Puzzle.BlockKit">Puzzle Candy
+                                    Match Block</a>
+                                <p>The premise of puzzles Candy is simple yet engaging: players are presented with a
+                                    grid filled with various types of candies of
                                     different colors and shapes.</p>
                                 <div class="game-tech">
                                     <span class="tech-tag">Unity</span>
@@ -963,10 +360,9 @@
                             </div>
                         </div>
 
-                         <div class="game-card">
+                        <div class="game-card">
                             <div class="game-image">
-                                <img src="../manav-savani/games/Royal Rescue.jpg"
-                                    alt="Royal Rescue">
+                                <img src="../manav-savani/games/Royal Rescue.jpg" alt="Royal Rescue">
                                 <a class="play-button"
                                     href="https://manav-savani.github.io/manav-savani/games/Royal%20Rescue/index.html"
                                     target="_blank">
@@ -974,9 +370,10 @@
                                 </a>
                             </div>
                             <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue">Royal Rescue</a>
-                                <p>Rescue Hero: Pull the Pin The gameplay revolves around pulling pins in the right order to free trapped characters while 
+                                <a href="https://play.google.com/store/apps/details?id=com.Games.RoyalRescue">Royal
+                                    Rescue</a>
+                                <p>Rescue Hero: Pull the Pin The gameplay revolves around pulling pins in the right
+                                    order to free trapped characters while
                                     avoiding traps, hazards, and enemies.</p>
                                 <div class="game-tech">
                                     <span class="tech-tag">Unity</span>
@@ -999,10 +396,19 @@
                                 </a>
                             </div>
                             <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga">Traffic Slide Saga</a>
-                                <p>Timeless board game of chance and strategy — roll the dice, move your tokens, and be
-                                    the first to reach home.</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.game.traffic.slide.saga">Traffic
+                                    Slide Saga</a>
+                                <div class="description">
+                                    <p>Timeless board game of chance and strategy — roll the dice,
+                                        move
+                                        your tokens, and be
+                                        the first to reach home.</p>
+                                    <div class="more-text">
+                                        Timeless board game of chance and strategy — roll the dice, move your tokens,
+                                        and be
+                                        the first to reach home.
+                                    </div>
+                                </div>
                                 <div class="game-tech">
                                     <span class="tech-tag">Unity</span>
                                     <span class="tech-tag">Mobile</span>
@@ -1024,9 +430,18 @@
                                 </a>
                             </div>
                             <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest">Water Sort Puzzle Quest</a>
-                                <p>🧪 Water Sort Puzzle Quest is Challenging Puzzles: Over 1,000 levels of increasing difficulty to keep your mind engaged. Each level presents a new challenge.</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.Game.WaterSortPuzzleQuest">Water
+                                    Sort Puzzle Quest</a>
+                                <p class="description"> Water Sort Puzzle Quest is Challenging Puzzles: Over 1,000
+                                    levels of increasing
+                                    difficulty to keep your mind engaged. Each level presents a new challenge.</p>
+                                <div class="more-text">
+                                    Water Sort Puzzle Quest is a game designed to challenge your brain with over 1,000
+                                    levels of puzzles. As you progress through the levels, the difficulty increases.
+                                    Each level presents a unique challenge to keep you engaged and test your
+                                    problem-solving skills. The game’s intuitive controls and colorful design make it
+                                    easy for players of all ages to enjoy.
+                                </div>
                                 <div class="game-tech">
                                     <span class="tech-tag">Unity</span>
                                     <span class="tech-tag">Mobile</span>
@@ -1041,7 +456,9 @@
                 </div>
 
                 <div class="game-category fade-in-up">
-                    <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">Educational GAMES</h3>
+                    <h3
+                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
+                        Educational GAMES</h3>
                     <div class="games-row">
                         <div class="game-card">
                             <div class="game-image">
@@ -1054,9 +471,10 @@
                                 </a>
                             </div>
                             <div class="game-info">
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest">Word Connect Quest</a>
-                                <p>Word Connect Quest is the ultimate word puzzle game that combines fun, relaxation, and mental exercise. </p>
+                                <a href="https://play.google.com/store/apps/details?id=com.game.word.connect.quest">Word
+                                    Connect Quest</a>
+                                <p>Word Connect Quest is the ultimate word puzzle game that combines fun, relaxation,
+                                    and mental exercise. </p>
                                 <div class="game-tech">
                                     <span class="tech-tag">Unity</span>
                                     <span class="tech-tag">Mobile</span>
@@ -1068,9 +486,127 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="game-category fade-in-up">
+                    <h3
+                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
+                        VR GAMES & Simulations
+                    </h3>
+                    <div class="games-row">
+                        <div class="game-card">
+                            <div class="game-image">
+                                <!-- Video with progress bar + muted by default -->
+                                <video controls muted playsinline
+                                    poster="../manav-savani/games/VR Games/CNC_Thub.png" width="100%"
+                                    style="border-radius: 10px;">
+
+                                    <source src="../manav-savani/games/VR Games/CNC machine.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+                            <div class="game-info">
+                                <a href="#">
+                                    CNC Machine VR Simulation
+                                </a>
+                                <p>A highly immersive CNC Machine VR simulation designed for training and interactive
+                                    learning.</p>
+                                <div class="game-tech">
+                                    <span class="tech-tag">Unity</span>
+                                    <span class="tech-tag">VR</span>
+                                    <span class="tech-tag">Simulation</span>
+                                    <span class="tech-tag">Google sheet</span>
+                                    <span class="tech-tag">Training Module</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="game-card">
+                            <div class="game-image">
+
+                                <video controls muted playsinline
+                                    poster="../manav-savani/games/VR Games/DroneSimulator_Thub.png"
+                                    width="100%" style="border-radius: 10px;">
+                                    <source src="../manav-savani/games/VR Games/Drone Simulator.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+                            <div class="game-info">
+                                <a href="#">
+                                    Drone Simulator VR
+                                </a>
+                                <p>An immersive drone simulation experience where players control various drone types
+                                    like Logistic, Surveillance, and more, using real-world mapping and custom APIs.</p>
+                                <div class="game-tech">
+                                    <span class="tech-tag">Unity</span>
+                                    <span class="tech-tag">VR</span>
+                                    <span class="tech-tag">Drone Simulation</span>
+                                    <span class="tech-tag">Google Maps API</span>
+                                    <span class="tech-tag">Custom Controller</span>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
+
+
+
+                <div class="game-category fade-in-up">
+                    <h3
+                        style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">
+                        VR Control Robotics Simulations
+                    </h3>
+                    <div class="games-row">
+                        <div class="game-card">
+                            <div class="game-image">
+                                <video controls muted playsinline loop
+                                    poster="../manav-savani/games/VR Games/Robot_Tumb.png" width="100%"
+                                    style="border-radius: 10px;">
+                                <video controls muted playsinline loop
+                                    poster="../manav-savani/games/VR Games/Robot_Tumb.png" width="100%"
+                                    style="border-radius: 10px;">
+
+                                    <source src="../manav-savani/games/VR Games/Robot VR Control.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="game-info">
+                                <a href="#">
+                                    VR Control Robotics Simulation
+                                </a>
+                                <p>
+                                    A cutting-edge VR Control Robotics project where a real robot is remotely operated
+                                    through a VR environment.
+                                    This system allows the user to control the physical robot’s movements and actions
+                                    with high precision,
+                                    offering an immersive interface for robotics training, defense, and industrial
+                                    applications.
+                                </p>
+                                <div class="game-tech">
+                                    <span class="tech-tag">Unity</span>
+                                    <span class="tech-tag">VR</span>
+                                    <span class="tech-tag">ROS</span>
+                                    <span class="tech-tag">Simulation</span>
+                                    <span class="tech-tag">IOT</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
             </div>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -1097,19 +633,44 @@
                     <a href="mailto:manavsavaniwork@gmail.com"
                         style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Send Email</a>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <h3>Location</h3>
-                    <p>Surat, India - 395006</p>
-                </div>
+
+
                 <div class="contact-item">
                     <span class="contact-icon">💼</span>
                     <h3>LinkedIn</h3>
                     <p>Professional Network</p>
-                    <a href="https://www.linkedin.com/in/manav-savani-4107ab34a" target="_blank"
+                    <a href="https://www.linkedin.com/in/manav-savani-4107ab34a"
+                        target="_blank"
                         style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Connect with
                         me</a>
                 </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">🟢</span>
+                    <h3>Upwork</h3>
+                    <p>Hire Me on Upwork</p>
+                    <a href="https://www.upwork.com/freelancers/~01285c6f72d589809a?qpn-profile-completeness=employment"
+                        target="_blank"
+                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">Check profile
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">🎨</span>
+                    <h3>Fiverr</h3>
+                    <p>Freelance Services</p>
+                    <a href="https://www.fiverr.com/dharmikanghan" target="_blank"
+                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">View Gigs</a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">🌍</span>
+                    <h3>Freelancer</h3>
+                    <p>Hire Me Worldwide</p>
+                    <a href="https://www.freelancer.com/u/dharmikanghan92?sb=t" target="_blank"
+                        style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem;">View Profile</a>
+                </div>
+
             </div>
 
             <div class="cta-section fade-in-up" style="text-align: center; margin-top: 4rem;">
@@ -1127,86 +688,11 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Manav Savani. All rights reserved.</p>
-            <p style="margin-top: 1rem; color: var(--text-dim);">Unity Developer • Game Development Specialist</p>
+            <p style="margin-top: 1rem; color: var(--text-dim);">Unity Developer </p>
         </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            observer.observe(el);
-        });
-
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.style.background = 'rgba(10, 10, 10, 0.95)';
-            } else {
-                nav.style.background = 'rgba(10, 10, 10, 0.8)';
-            }
-        });
-
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero-content');
-            const speed = scrolled * 0.5;
-            if (parallax) {
-                parallax.style.transform = `translateY(${speed}px)`;
-            }
-        });
-
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('mouseenter', function () {
-                this.style.background = `rgba(${Math.random() * 255}, ${Math.random() * 255}, 136, 0.2)`;
-            });
-
-            tag.addEventListener('mouseleave', function () {
-                this.style.background = 'rgba(0, 255, 136, 0.1)';
-            });
-        });
-
-        
-        const heroTitle = document.querySelector('.hero-title');
-        if (heroTitle) {
-            const text = "Manav Savani"; 
-            heroTitle.textContent = '';
-            let i = 0;
-            const typeWriter = () => {
-                if (i < text.length) {
-                    heroTitle.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100);
-                }
-            };
-            setTimeout(typeWriter, 500);
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
