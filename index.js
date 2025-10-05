@@ -60,7 +60,7 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
 
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-    const text = "Dharmik Anghan";
+    const text = "Manav Savani";
     heroTitle.textContent = '';
     let i = 0;
     const typeWriter = () => {
