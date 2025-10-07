@@ -544,46 +544,6 @@ nav {
   display: block;
 }
 
-.game-image:hover img {
-  opacity: 0.3;
-  filter: blur(2px);
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(135deg, #ff6b6b, #ff4757);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 12px 26px;
-  border-radius: 50px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  opacity: 0;
-  transition: all 0.4s ease;
-  z-index: 2;
-}
-
-.play-button i {
-  font-size: 18px;
-}
-
-.game-image:hover .play-button {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.play-button:hover {
-  box-shadow: 0 0 15px #ff6b6b;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
 .game-card:hover .game-image img {
   transform: scale(1.05);
 }
