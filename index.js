@@ -88,3 +88,20 @@ navItems.forEach((link) => {
     menuIcon.classList.remove("toggle");
   });
 });
+
+const dropdown = document.querySelector(".dropdown .dropdown-toggle");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+const dropdownMenuLinks = document.querySelectorAll(".dropdown-menu li a");
+
+dropdown.addEventListener("click", (e) => {
+  e.preventDefault();
+  dropdownMenu.classList.toggle("active");
+});
+
+dropdownMenuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    dropdownMenu.classList.remove("active");
+  });
+});
+
