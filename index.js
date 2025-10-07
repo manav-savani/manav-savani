@@ -76,7 +76,7 @@ if (heroTitle) {
 
 const menuIcon = document.getElementById("menu-icon");
 const navLinks = document.querySelector(".nav-links");
-const navItems = document.querySelectorAll(".nav-links a");
+const navItems = document.querySelectorAll(".nav-links span");
 menuIcon.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   menuIcon.classList.toggle("toggle");
