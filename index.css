@@ -791,10 +791,10 @@ nav {
   .play-button {
     opacity: 1;
   }
-  .game-image img {
+  /* .game-image img {
     opacity: 0.3;
     filter: blur(2px);
-  }
+  } */
    .dropdown-menu {
     position: relative;
     top: 0;
@@ -867,10 +867,10 @@ nav {
   .play-button {
     opacity: 1;
   }
-  .game-image img {
+  /* .game-image img {
     opacity: 0.3;
     filter: blur(2px);
-  }
+  } */
   .dropdown-menu {
     position: relative;
     top: 0;
